@@ -1,0 +1,158 @@
+<head>
+ 
+    <meta charset="utf-8">
+      
+    <link href='https://fonts.googleapis.com/css?family=Candal|Noto+Sans' rel='stylesheet' type='text/css'>
+     
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+       <title>Weather page</title> 
+
+       <style>
+           .locationbox{
+    border-radius: 50%;
+	width: 150px;
+	height: 150px; 
+    border: 5px solid #7FB1AA;
+  background-color: #445F5B;
+   margin:2em auto auto auto;
+   position:absolute;top:em;left:43%;
+ 
+}
+.locationbox2{
+    border-radius: 50%;
+	width: 130px;
+	height: 130px; 
+    border: 5px solid #7FB1AA;
+  background-color:#668480;
+  position:absolute;top:3em;left:16em;
+}
+
+#description{
+    border-radius: 50%;
+	width: 130px;
+	height: 130px;
+    border: 5px solid #7FB1AA;
+  background-color: #668460;
+  position:absolute;top:7em;left:10.5em;
+}
+#humidity{
+    border-radius: 50%;
+	width: 130px;
+	height: 130px;
+    border: 5px solid #7FB1AA;
+  background-color:#5b88a1;
+  position:absolute;top:13em;left:-3.5em;
+  
+}
+.weatherbox{
+   margin:3em auto auto auto;
+    border-radius: 50%;
+	width: 300px;
+	height: 300px; 
+  border: 5px solid #7FB1AA;
+  background-color: #5F857F;
+ position:relative;
+  margin:-1em auto auto auto;
+}
+.button-container {
+  display: block;
+  width: 80%;
+  text-align:center;
+  margin-left:-1em;
+  margin-top:1em;
+  margin-right: auto;
+}
+button {
+  cursor: pointer;
+}
+.temp-toggle-button {
+  float: right;
+  display: inline-block;
+  cursor: pointer;
+  padding: 3px 5px 3px 5px;
+  margin-left:-1px;
+  margin-right:-1px;
+  width: 30%;
+  background-color: transparent;
+  font-size: 13px;
+  text-align: center; 
+  border: 3px solid black;
+  letter-spacing: 1px;
+}
+.active {
+  background-color:#263533;
+  color:white;
+}
+body{
+ /* background-image:url("https://c1.staticflickr.com/8/7102/7386023168_aebe6c02a5_b.jpg"); 
+  width:100%;  alt="The little house and the water." ;*/
+  background-color:#9FDED5;
+font-family: 'Noto Sans', sans-serif;
+}
+#temp{
+  color:#444446;
+  font-size:6em;
+  text-align:center;
+  padding-top:1em;
+  
+}
+#city{
+  text-align:center;
+   font-size:2.2em;
+}
+#country{
+  text-align:center;
+  font-size:2em;
+  
+}
+#country{
+  text-align:center;
+}
+#humidity{
+  color:#444446;
+  font-size:1.6em;
+  text-align:center;
+  padding-top:1em;
+}
+#description{
+  color:#444446;
+  font-size:2em;
+  text-align:center;
+  padding-top:1em;
+}
+       </style>
+    </head>
+    <body>
+      <contents> 
+        <div class="locationbox">
+        <h2 id="city">your city</h2> 
+       <!-- </div>-->
+         <div class="locationbox2">
+        <h2 id="country">your country</h2> 
+        </div>
+           <div id ="description">here i am </div>
+           <div id ="humidity">Humidity </div>
+        
+        
+        <div class="weatherbox">
+             <div id ="temp">temperature</div>
+            <div class="button-container">
+                <button class="temp-toggle-button active" id="celsius">°C</button>
+              <button class="temp-toggle-button active" id="farenheit">°F</botton> 
+          </div>
+         
+        
+          </div>
+          
+          </div>
+          
+        </div>
+      </contents>
+
+      <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+    
+      <script src="weather.js"></script>
+
+      </body>
